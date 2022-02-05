@@ -24,7 +24,7 @@ function addEventListeners() {
   const wanderBtn = document.getElementById('submit')
 
   wanderBtn.addEventListener('click', () => {
-      const state = document.getElementById('states-dropdown')
+      const state = document.getElementById('states-list')
       const selectedState = [state].map(option => option.value) 
       console.log(selectedState)
       renderParks(selectedState) 
