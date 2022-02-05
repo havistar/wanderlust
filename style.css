@@ -33,14 +33,14 @@ img {
     width:  150px;
     height: 150px;
     object-fit: cover;
-    padding: 10px;
+    padding: 15px;
     float: left;   
 }
 
 ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
-    padding: 15px;
+    padding: 10px;
     overflow: hidden;
 }
 
