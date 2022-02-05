@@ -32,7 +32,6 @@ function addEventListeners() {
 }
 
 
-// Render Parks Function
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
