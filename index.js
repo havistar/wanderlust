@@ -20,7 +20,6 @@ function getParks() {
 }
 
 
-// Event Listener for Submit and Selected State
 function addEventListeners() {
   const wanderBtn = document.getElementById('submit')
 
