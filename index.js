@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 
+// Fetch
 let parks
 
 function getParks() {
@@ -20,18 +21,20 @@ function getParks() {
 }
 
 
+// Event Listener for Submit and Selected State
 function addEventListeners() {
   const wanderBtn = document.getElementById('submit')
 
   wanderBtn.addEventListener('click', () => {
       const state = document.getElementById('states-dropdown')
-      const selectedState = [state].map(option => option.value) 
+      const selectedState = [state].map(option => option.value) // array with the state selected
       console.log(selectedState)
       renderParks(selectedState) 
   })
 }
 
 
+// Render Parks Function
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
@@ -75,3 +78,5 @@ function renderParks(selectedState) {
     }
   }
 
+  // dont put things in global
+  
