@@ -75,5 +75,3 @@ function renderParks(selectedState) {
     }
   }
 
-  // dont put things in global
-  
