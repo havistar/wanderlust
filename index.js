@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 
+// Fetch
 let parks
 
 function getParks() {
@@ -20,18 +21,20 @@ function getParks() {
 }
 
 
+// Event Listener for Submit and Selected State
 function addEventListeners() {
   const wanderBtn = document.getElementById('submit')
 
   wanderBtn.addEventListener('click', () => {
       const state = document.getElementById('states-dropdown')
-      const selectedState = [state].map(option => option.value) 
+      const selectedState = [state].map(option => option.value) // array with the state selected
       console.log(selectedState)
       renderParks(selectedState) 
   })
 }
 
 
+// Render Parks Function
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
@@ -50,12 +53,16 @@ function renderParks(selectedState) {
             const ul = document.createElement('ul')
             const img = document.createElement('img')
             const descrip = document.createElement('p')
+            const directions = document.createElement('a')
             const liker = document.createElement('button')
             liker.textContent = EMPTY_HEART
+            directions.innerText = 'Get Directions'
+            directions.href = filteredParks[i].directionsUrl
+            directions.target = '_blank'
             img.src = filteredParks[i].images[0].url
             ul.innerText = filteredParks[i].fullName
             descrip.innerText = filteredParks[i].description
-            parkDiv.append(img, ul, descrip, liker) 
+            parkDiv.append(img, ul, descrip, directions, liker) 
             liker.addEventListener('click', likePark)
             }
         }  
@@ -71,3 +78,5 @@ function renderParks(selectedState) {
     }
   }
 
+  // dont put things in global
+  
