@@ -36,7 +36,6 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 function renderParks(selectedState) {
-  console.log("hello")
     const parkDiv = document.getElementById('park-results')
     parkDiv.innerHTML = ' '
     console.log(selectedState)
