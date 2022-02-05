@@ -16,7 +16,7 @@ h1 {
 
 p {
     font-family: sans-serif;
-    color: white(75, 4%, 38%);
+    color: white;
     font-size: 15px;
     overflow: hidden;
     padding: 10px;
@@ -51,6 +51,12 @@ ul {
     overflow: hidden;
 }
 
+a {
+    font-family: sans-serif;
+    font-size: 15px;
+    overflow: hidden;
+    padding: 12px;
+}
 
 button {
     font-family: sans-serif;
